@@ -17,7 +17,6 @@ function App() {
     window.location.href = window.location.href
   }
 
-
   return (
     <div className="App">
       <header>
@@ -26,7 +25,7 @@ function App() {
         <nav>
           <Link to="/">Home</Link>
           <Link to="/private">Página Privada</Link>
-          {auth.user && <button onClick={handleLogout}>Sair</button> }
+          { auth.user && <button onClick={handleLogout}>Sair</button> }
         </nav>
 
         <hr />
